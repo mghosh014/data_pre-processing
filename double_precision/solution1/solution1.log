@@ -1,0 +1,1410 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:38 . Memory (MB): peak = 180.477 ; gain = 88.273
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:38 . Memory (MB): peak = 180.477 ; gain = 88.273
+INFO: [HLS 200-10] Starting code transformations ...
+ERROR: [SYNCHK 200-79] Cannot find the top function 'double_subtraction' in the design. Possible causes are: (1) the top function name is misspelled; (2) the top function is nonexistent or declared as static.
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 179.828 ; gain = 89.531
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 179.828 ; gain = 89.531
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 179.828 ; gain = 89.531
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 179.828 ; gain = 89.531
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 179.828 ; gain = 89.531
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 179.828 ; gain = 89.531
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 27.608 seconds; current allocated memory: 104.136 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.065 seconds; current allocated memory: 104.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.122 seconds; current allocated memory: 104.335 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 133.00 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 179.844 ; gain = 89.547
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 29.082 seconds; peak allocated memory: 104.335 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 179.840 ; gain = 90.594
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 179.840 ; gain = 90.594
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 179.840 ; gain = 90.594
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 179.840 ; gain = 90.594
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 179.840 ; gain = 90.594
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 179.840 ; gain = 90.594
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.665 seconds; current allocated memory: 104.153 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.063 seconds; current allocated memory: 104.228 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.102 seconds; current allocated memory: 104.398 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 133.00 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 179.840 ; gain = 90.594
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 21.947 seconds; peak allocated memory: 104.398 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:46 . Memory (MB): peak = 179.562 ; gain = 87.363
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:46 . Memory (MB): peak = 179.562 ; gain = 87.363
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:49 . Memory (MB): peak = 209.430 ; gain = 117.230
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logfloat.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:17) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:49 . Memory (MB): peak = 244.539 ; gain = 152.340
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (DS/core.cpp:20:5) to (DS/core.cpp:31:2) in function 'double_subtraction'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:50 . Memory (MB): peak = 304.711 ; gain = 212.512
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:51 . Memory (MB): peak = 312.066 ; gain = 219.867
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 51.222 seconds; current allocated memory: 244.374 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 244.565 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_mul_42ns_65s_106_2_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.171 seconds; current allocated memory: 244.925 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 115.45 MHz
+INFO: [RTMG 210-282] Generating pipelined core: 'double_subtractiobkb_MulnS_0'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:53 . Memory (MB): peak = 327.238 ; gain = 235.039
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 53.382 seconds; peak allocated memory: 244.925 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 180.898 ; gain = 90.660
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 180.898 ; gain = 90.660
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 208.801 ; gain = 118.562
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logfloat.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:17) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 244.336 ; gain = 154.098
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (DS/core.cpp:20:5) to (DS/core.cpp:31:2) in function 'double_subtraction'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 304.223 ; gain = 213.984
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 311.312 ; gain = 221.074
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 31.67 seconds; current allocated memory: 244.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.214 seconds; current allocated memory: 244.567 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_mul_42ns_65s_106_2_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.306 seconds; current allocated memory: 244.943 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 115.45 MHz
+INFO: [RTMG 210-282] Generating pipelined core: 'double_subtractiobkb_MulnS_0'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:34 . Memory (MB): peak = 327.324 ; gain = 237.086
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 34.461 seconds; peak allocated memory: 244.943 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 180.160 ; gain = 89.891
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 180.160 ; gain = 89.891
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 247.176 ; gain = 156.906
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<short, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<short, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<short, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<short, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<short, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<short, double>' into '__hls_fptosi_double_i16' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:17) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i16' into 'double_subtraction' (DS/core.cpp:30) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 279.090 ; gain = 188.820
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<short, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<short, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<short, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<short, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<short, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<short, double>' into '__hls_fptosi_double_i16' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i16' into 'double_subtraction' (DS/core.cpp:30) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:29 . Memory (MB): peak = 352.223 ; gain = 261.953
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:29 . Memory (MB): peak = 369.422 ; gain = 279.152
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.428 seconds; current allocated memory: 296.858 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.297 seconds; current allocated memory: 297.108 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.233 seconds; current allocated memory: 297.773 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:32 . Memory (MB): peak = 384.152 ; gain = 293.883
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 32.257 seconds; peak allocated memory: 297.773 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 180.062 ; gain = 87.770
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 180.062 ; gain = 87.770
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:32 . Memory (MB): peak = 201.906 ; gain = 109.613
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:32 . Memory (MB): peak = 218.414 ; gain = 126.121
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 263.988 ; gain = 171.695
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 264.484 ; gain = 172.191
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 33.681 seconds; current allocated memory: 201.230 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.255 seconds; current allocated memory: 201.404 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.404 seconds; current allocated memory: 201.924 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:38 . Memory (MB): peak = 282.871 ; gain = 190.578
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 38.065 seconds; peak allocated memory: 201.924 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:51 . Memory (MB): peak = 180.855 ; gain = 88.562
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:51 . Memory (MB): peak = 180.855 ; gain = 88.562
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:53 . Memory (MB): peak = 201.598 ; gain = 109.305
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:54 . Memory (MB): peak = 218.332 ; gain = 126.039
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (DS/core.cpp:21) in function 'double_subtraction' partially with a factor of 2.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:54 . Memory (MB): peak = 263.848 ; gain = 171.555
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:55 . Memory (MB): peak = 264.070 ; gain = 171.777
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test (fifo request on port 'a_V' (DS/core.cpp:21)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 19.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 55.414 seconds; current allocated memory: 201.366 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.292 seconds; current allocated memory: 201.626 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.329 seconds; current allocated memory: 202.439 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:59 . Memory (MB): peak = 283.312 ; gain = 191.020
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 58.675 seconds; peak allocated memory: 202.439 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 180.258 ; gain = 90.918
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 180.258 ; gain = 90.918
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 201.887 ; gain = 112.547
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 218.410 ; gain = 129.070
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (DS/core.cpp:21) in function 'double_subtraction' partially with a factor of 4.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:32 . Memory (MB): peak = 264.004 ; gain = 174.664
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:32 . Memory (MB): peak = 264.492 ; gain = 175.152
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test (fifo request on port 'a_V' (DS/core.cpp:21)) in the first pipeline iteration (II = 1 cycles).
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test (fifo request on port 'a_V' (DS/core.cpp:21)) in the first pipeline iteration (II = 2 cycles).
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test (fifo request on port 'a_V' (DS/core.cpp:21)) in the first pipeline iteration (II = 3 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 21.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 33.438 seconds; current allocated memory: 201.706 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.175 seconds; current allocated memory: 202.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.298 seconds; current allocated memory: 203.332 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 285.066 ; gain = 195.727
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 36.639 seconds; peak allocated memory: 203.332 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 180.066 ; gain = 87.824
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 180.066 ; gain = 87.824
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 202.027 ; gain = 109.785
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 218.566 ; gain = 126.324
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 264.207 ; gain = 171.965
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 264.969 ; gain = 172.727
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.334 seconds; current allocated memory: 201.137 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.096 seconds; current allocated memory: 201.315 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.189 seconds; current allocated memory: 201.710 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 282.754 ; gain = 190.512
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 30.614 seconds; peak allocated memory: 201.710 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 180.926 ; gain = 88.664
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 180.926 ; gain = 88.664
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 202.145 ; gain = 109.883
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 218.367 ; gain = 126.105
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 264.199 ; gain = 171.938
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 264.441 ; gain = 172.180
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 25.889 seconds; current allocated memory: 201.137 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.096 seconds; current allocated memory: 201.315 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.194 seconds; current allocated memory: 201.710 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 282.223 ; gain = 189.961
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 28.123 seconds; peak allocated memory: 201.710 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 180.023 ; gain = 87.730
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 180.023 ; gain = 87.730
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 202.000 ; gain = 109.707
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 218.547 ; gain = 126.254
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 263.969 ; gain = 171.676
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 264.430 ; gain = 172.137
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.547 seconds; current allocated memory: 201.137 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.094 seconds; current allocated memory: 201.315 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.176 seconds; current allocated memory: 201.710 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:31 . Memory (MB): peak = 282.148 ; gain = 189.855
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 30.686 seconds; peak allocated memory: 201.710 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 179.863 ; gain = 90.594
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 179.863 ; gain = 90.594
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 201.812 ; gain = 112.543
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 218.098 ; gain = 128.828
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 264.676 ; gain = 175.406
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 264.676 ; gain = 175.406
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 30.479 seconds; current allocated memory: 201.104 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 201.260 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.189 seconds; current allocated memory: 201.692 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:32 . Memory (MB): peak = 281.930 ; gain = 192.660
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 32.531 seconds; peak allocated memory: 201.692 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 180.246 ; gain = 87.922
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 180.246 ; gain = 87.922
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 201.082 ; gain = 108.758
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 218.613 ; gain = 126.289
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 263.266 ; gain = 170.941
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 264.012 ; gain = 171.688
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.164 seconds; current allocated memory: 201.137 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.095 seconds; current allocated memory: 201.315 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.178 seconds; current allocated memory: 201.710 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 281.531 ; gain = 189.207
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 30.258 seconds; peak allocated memory: 201.710 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: DS/core.cpp:22:1
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file DS/core.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 180.938 ; gain = 91.211
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 180.938 ; gain = 91.211
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 201.031 ; gain = 111.305
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 218.305 ; gain = 128.578
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (DS/core.cpp:22) to a process function for dataflow in function 'double_subtraction'.
+INFO: [XFORM 203-712] Applying dataflow to function 'double_subtraction', detected/extracted 1 process function(s): 
+	 'Loop_1_proc52'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 264.137 ; gain = 174.410
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 265.434 ; gain = 175.707
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc52' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.579 seconds; current allocated memory: 211.028 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.101 seconds; current allocated memory: 211.201 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.158 seconds; current allocated memory: 211.252 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.092 seconds; current allocated memory: 211.313 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc52' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc52'.
+INFO: [HLS 200-111]  Elapsed time: 0.145 seconds; current allocated memory: 211.664 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.285 seconds; current allocated memory: 211.877 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 275.727 ; gain = 186.000
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 31.249 seconds; peak allocated memory: 211.877 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 180.613 ; gain = 88.324
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 180.613 ; gain = 88.324
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 201.125 ; gain = 108.836
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 218.141 ; gain = 125.852
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 263.352 ; gain = 171.062
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 264.383 ; gain = 172.094
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 30.204 seconds; current allocated memory: 201.214 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.113 seconds; current allocated memory: 201.387 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.327 seconds; current allocated memory: 201.891 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:32 . Memory (MB): peak = 282.309 ; gain = 190.020
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 32.499 seconds; peak allocated memory: 201.891 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 180.117 ; gain = 87.738
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 180.117 ; gain = 87.738
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 202.066 ; gain = 109.688
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 218.605 ; gain = 126.227
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 264.273 ; gain = 171.895
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 264.527 ; gain = 172.148
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.884 seconds; current allocated memory: 201.215 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.125 seconds; current allocated memory: 201.388 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.186 seconds; current allocated memory: 201.892 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 282.375 ; gain = 189.996
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 31.416 seconds; peak allocated memory: 201.892 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 180.375 ; gain = 90.027
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 180.375 ; gain = 90.027
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 201.254 ; gain = 110.906
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 218.520 ; gain = 128.172
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 264.418 ; gain = 174.070
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 264.418 ; gain = 174.070
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.35 seconds; current allocated memory: 201.103 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.108 seconds; current allocated memory: 201.260 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.203 seconds; current allocated memory: 201.692 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:32 . Memory (MB): peak = 281.648 ; gain = 191.301
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 31.768 seconds; peak allocated memory: 201.692 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 180.223 ; gain = 87.969
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 180.223 ; gain = 87.969
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 201.844 ; gain = 109.590
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 218.578 ; gain = 126.324
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (DS/core.cpp:21) in function 'double_subtraction' partially with a factor of 2.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 264.004 ; gain = 171.750
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 264.234 ; gain = 171.980
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test (fifo request on port 'a_V' (DS/core.cpp:21)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 19.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 31.746 seconds; current allocated memory: 201.350 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.133 seconds; current allocated memory: 201.611 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.207 seconds; current allocated memory: 202.423 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:34 . Memory (MB): peak = 283.113 ; gain = 190.859
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 34.492 seconds; peak allocated memory: 202.423 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 180.070 ; gain = 90.473
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 180.070 ; gain = 90.473
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 202.031 ; gain = 112.434
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 218.191 ; gain = 128.594
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (DS/core.cpp:21) in function 'double_subtraction' partially with a factor of 2.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 264.207 ; gain = 174.609
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 264.680 ; gain = 175.082
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test (fifo request on port 'a_V' (DS/core.cpp:21)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 19.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 27.777 seconds; current allocated memory: 201.366 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.246 seconds; current allocated memory: 201.626 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 202.439 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 283.336 ; gain = 193.738
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 30.685 seconds; peak allocated memory: 202.439 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:48 . Memory (MB): peak = 180.492 ; gain = 90.789
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:48 . Memory (MB): peak = 180.492 ; gain = 90.789
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:50 . Memory (MB): peak = 201.809 ; gain = 112.105
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:51 . Memory (MB): peak = 218.152 ; gain = 128.449
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:52 . Memory (MB): peak = 264.137 ; gain = 174.434
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:52 . Memory (MB): peak = 264.867 ; gain = 175.164
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 52.572 seconds; current allocated memory: 201.215 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.153 seconds; current allocated memory: 201.389 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.348 seconds; current allocated memory: 201.908 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:56 . Memory (MB): peak = 282.348 ; gain = 192.645
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 55.835 seconds; peak allocated memory: 201.908 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:01:16 . Memory (MB): peak = 180.297 ; gain = 89.934
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:01:16 . Memory (MB): peak = 180.297 ; gain = 89.934
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:01:20 . Memory (MB): peak = 201.625 ; gain = 111.262
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:01:20 . Memory (MB): peak = 217.965 ; gain = 127.602
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:01:21 . Memory (MB): peak = 263.625 ; gain = 173.262
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:01:21 . Memory (MB): peak = 264.367 ; gain = 174.004
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 81.582 seconds; current allocated memory: 201.213 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.166 seconds; current allocated memory: 201.386 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.312 seconds; current allocated memory: 201.906 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:01:26 . Memory (MB): peak = 282.055 ; gain = 191.691
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 86.514 seconds; peak allocated memory: 201.906 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'DS/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 180.141 ; gain = 87.773
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 180.141 ; gain = 87.773
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:36 . Memory (MB): peak = 201.738 ; gain = 109.371
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_log_double.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'hls::log10' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/logdouble.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::log10' into 'double_subtraction' (DS/core.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:37 . Memory (MB): peak = 217.980 ; gain = 125.613
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:37 . Memory (MB): peak = 264.211 ; gain = 171.844
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:37 . Memory (MB): peak = 264.461 ; gain = 172.094
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'double_subtraction' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 37.413 seconds; current allocated memory: 201.199 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 201.373 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'double_subtraction' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/a_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/b_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'double_subtraction/c_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'double_subtraction' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dsub_64ns_64ns_64_5_full_dsp_1' to 'double_subtractiobkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dmul_64ns_64ns_64_5_max_dsp_1' to 'double_subtractiocud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_sitodp_32s_64_5_1' to 'double_subtractiodEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'double_subtraction_dptohp_64ns_16_2_1' to 'double_subtractioeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiobkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiocud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractiodEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'double_subtractioeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'double_subtraction'.
+INFO: [HLS 200-111]  Elapsed time: 0.178 seconds; current allocated memory: 201.893 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.81 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:40 . Memory (MB): peak = 282.234 ; gain = 189.867
+INFO: [VHDL 208-304] Generating VHDL RTL for double_subtraction.
+INFO: [VLOG 209-307] Generating Verilog RTL for double_subtraction.
+INFO: [HLS 200-112] Total elapsed time: 40.346 seconds; peak allocated memory: 201.893 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
