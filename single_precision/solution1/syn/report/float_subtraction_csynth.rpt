@@ -1,0 +1,181 @@
+
+
+================================================================
+== Vivado HLS Report for 'float_subtraction'
+================================================================
+* Date:           Wed Aug 18 13:43:59 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        FS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.588 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |        ?|        ?|        14|          1|          1|     ?|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      11|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      5|     755|    1813|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|      18|    -|
+|Register         |        0|      -|     242|      32|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      5|     997|    1874|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1090|    900|  437200|  218600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|   ~0  |   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    |float_subtractionbkb_U1  |float_subtractionbkb  |        0|      2|  227|  404|    0|
+    |float_subtractioncud_U2  |float_subtractioncud  |        0|      3|  128|  320|    0|
+    |float_subtractiondEe_U3  |float_subtractiondEe  |        0|      0|  168|  534|    0|
+    |float_subtractiondEe_U4  |float_subtractiondEe  |        0|      0|  168|  534|    0|
+    |float_subtractioneOg_U5  |float_subtractioneOg  |        0|      0|   64|   21|    0|
+    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    |Total                    |                      |        0|      5|  755| 1813|    0|
+    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------------+----------+-------+---+----+------------+------------+
+    |            Variable Name           | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------+----------+-------+---+----+------------+------------+
+    |ap_block_state15_pp0_stage0_iter13  |    and   |      0|  0|   1|           1|           1|
+    |ap_predicate_op29_read_state2       |    and   |      0|  0|   1|           1|           1|
+    |tmp_1_nbreadreq_fu_52_p3            |    and   |      0|  0|   1|           1|           0|
+    |tmp_nbreadreq_fu_44_p3              |    and   |      0|  0|   1|           1|           0|
+    |ap_block_pp0_stage0_01001           |    or    |      0|  0|   1|           1|           1|
+    |ap_block_state2_pp0_stage0_iter0    |    or    |      0|  0|   1|           1|           1|
+    |ap_predicate_tran2to16_state2       |    or    |      0|  0|   1|           1|           1|
+    |ap_enable_pp0                       |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1             |    xor   |      0|  0|   2|           2|           1|
+    +------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                               |          |      0|  0|  11|          10|           8|
+    +------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |a_V_blk_n                 |   3|          2|    1|          2|
+    |ap_NS_fsm                 |   3|          4|    1|          4|
+    |ap_enable_reg_pp0_iter1   |   3|          2|    1|          2|
+    |ap_enable_reg_pp0_iter13  |   3|          2|    1|          2|
+    |b_V_blk_n                 |   3|          2|    1|          2|
+    |c_V_blk_n                 |   3|          2|    1|          2|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     |  18|         14|    6|         14|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                 |   3|   0|    3|          0|
+    |ap_enable_reg_pp0_iter0   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9   |   1|   0|    1|          0|
+    |d_reg_133                 |  32|   0|   32|          0|
+    |e_reg_138                 |  32|   0|   32|          0|
+    |f_reg_148                 |  32|   0|   32|          0|
+    |tmp_1_reg_109             |   1|   0|    1|          0|
+    |tmp_3_reg_113             |  16|   0|   16|          0|
+    |tmp_4_reg_118             |  16|   0|   16|          0|
+    |tmp_5_reg_143             |  32|   0|   32|          0|
+    |tmp_1_reg_109             |  64|  32|    1|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     | 242|  32|  179|          0|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+-------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-------------+-----+-----+------------+-------------------+--------------+
+|ap_clk       |  in |    1| ap_ctrl_hs | float_subtraction | return value |
+|ap_rst       |  in |    1| ap_ctrl_hs | float_subtraction | return value |
+|ap_start     |  in |    1| ap_ctrl_hs | float_subtraction | return value |
+|ap_done      | out |    1| ap_ctrl_hs | float_subtraction | return value |
+|ap_idle      | out |    1| ap_ctrl_hs | float_subtraction | return value |
+|ap_ready     | out |    1| ap_ctrl_hs | float_subtraction | return value |
+|a_V_dout     |  in |   16|   ap_fifo  |        a_V        |    pointer   |
+|a_V_empty_n  |  in |    1|   ap_fifo  |        a_V        |    pointer   |
+|a_V_read     | out |    1|   ap_fifo  |        a_V        |    pointer   |
+|b_V_dout     |  in |   16|   ap_fifo  |        b_V        |    pointer   |
+|b_V_empty_n  |  in |    1|   ap_fifo  |        b_V        |    pointer   |
+|b_V_read     | out |    1|   ap_fifo  |        b_V        |    pointer   |
+|c_V_din      | out |   16|   ap_fifo  |        c_V        |    pointer   |
+|c_V_full_n   |  in |    1|   ap_fifo  |        c_V        |    pointer   |
+|c_V_write    | out |    1|   ap_fifo  |        c_V        |    pointer   |
++-------------+-----+-----+------------+-------------------+--------------+
+

@@ -1,0 +1,271 @@
+
+
+================================================================
+== Vivado HLS Report for 'float_subtraction'
+================================================================
+* Date:           Wed Aug 18 13:43:58 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        FS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.588 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |        ?|        ?|        14|          1|          1|     ?|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 14
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 16
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 14, States = { 2 3 4 5 6 7 8 9 10 11 12 13 14 15 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 16 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 2 
+16 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(half* %c_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 17 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%empty_3 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %b_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 18 'specinterface' 'empty_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecInterface(i16* %a_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 19 'specinterface' 'empty_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %a_V), !map !112"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %b_V), !map !116"   --->   Operation 21 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(half* %c_V), !map !120"   --->   Operation 22 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @float_subtraction_st) nounwind"   --->   Operation 23 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "br label %1" [FS/core.cpp:21]   --->   Operation 24 'br' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.40>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %a_V, i32 1)" [FS/core.cpp:21]   --->   Operation 25 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "br i1 %tmp, label %2, label %.critedge" [FS/core.cpp:21]   --->   Operation 26 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_1 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %b_V, i32 1)" [FS/core.cpp:21]   --->   Operation 27 'nbreadreq' 'tmp_1' <Predicate = (tmp)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %tmp_1, label %hls_label_0, label %.critedge" [FS/core.cpp:21]   --->   Operation 28 'br' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (3.40ns)   --->   "%tmp_3 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %a_V)" [FS/core.cpp:27]   --->   Operation 29 'read' 'tmp_3' <Predicate = (tmp & tmp_1)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_2 : Operation 30 [1/1] (3.40ns)   --->   "%tmp_4 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %b_V)" [FS/core.cpp:28]   --->   Operation 30 'read' 'tmp_4' <Predicate = (tmp & tmp_1)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+
+State 3 <SV = 2> <Delay = 8.08>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%sext_ln27 = sext i16 %tmp_3 to i32" [FS/core.cpp:27]   --->   Operation 31 'sext' 'sext_ln27' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_3 : Operation 32 [4/4] (8.08ns)   --->   "%d = sitofp i32 %sext_ln27 to float" [FS/core.cpp:27]   --->   Operation 32 'sitofp' 'd' <Predicate = (tmp_1)> <Delay = 8.08> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 3> <II = 1> <Delay = 8.08> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%sext_ln28 = sext i16 %tmp_4 to i32" [FS/core.cpp:28]   --->   Operation 33 'sext' 'sext_ln28' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_3 : Operation 34 [4/4] (8.08ns)   --->   "%e = sitofp i32 %sext_ln28 to float" [FS/core.cpp:28]   --->   Operation 34 'sitofp' 'e' <Predicate = (tmp_1)> <Delay = 8.08> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 3> <II = 1> <Delay = 8.08> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 8.08>
+ST_4 : Operation 35 [3/4] (8.08ns)   --->   "%d = sitofp i32 %sext_ln27 to float" [FS/core.cpp:27]   --->   Operation 35 'sitofp' 'd' <Predicate = (tmp_1)> <Delay = 8.08> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 3> <II = 1> <Delay = 8.08> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_4 : Operation 36 [3/4] (8.08ns)   --->   "%e = sitofp i32 %sext_ln28 to float" [FS/core.cpp:28]   --->   Operation 36 'sitofp' 'e' <Predicate = (tmp_1)> <Delay = 8.08> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 3> <II = 1> <Delay = 8.08> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 8.08>
+ST_5 : Operation 37 [2/4] (8.08ns)   --->   "%d = sitofp i32 %sext_ln27 to float" [FS/core.cpp:27]   --->   Operation 37 'sitofp' 'd' <Predicate = (tmp_1)> <Delay = 8.08> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 3> <II = 1> <Delay = 8.08> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_5 : Operation 38 [2/4] (8.08ns)   --->   "%e = sitofp i32 %sext_ln28 to float" [FS/core.cpp:28]   --->   Operation 38 'sitofp' 'e' <Predicate = (tmp_1)> <Delay = 8.08> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 3> <II = 1> <Delay = 8.08> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 8.08>
+ST_6 : Operation 39 [1/4] (8.08ns)   --->   "%d = sitofp i32 %sext_ln27 to float" [FS/core.cpp:27]   --->   Operation 39 'sitofp' 'd' <Predicate = (tmp_1)> <Delay = 8.08> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 3> <II = 1> <Delay = 8.08> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_6 : Operation 40 [1/4] (8.08ns)   --->   "%e = sitofp i32 %sext_ln28 to float" [FS/core.cpp:28]   --->   Operation 40 'sitofp' 'e' <Predicate = (tmp_1)> <Delay = 8.08> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 3> <II = 1> <Delay = 8.08> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 8.58>
+ST_7 : Operation 41 [4/4] (8.58ns)   --->   "%tmp_5 = fsub float %d, %e" [FS/core.cpp:29]   --->   Operation 41 'fsub' 'tmp_5' <Predicate = (tmp_1)> <Delay = 8.58> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 8.58> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 8.58>
+ST_8 : Operation 42 [3/4] (8.58ns)   --->   "%tmp_5 = fsub float %d, %e" [FS/core.cpp:29]   --->   Operation 42 'fsub' 'tmp_5' <Predicate = (tmp_1)> <Delay = 8.58> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 8.58> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 8.58>
+ST_9 : Operation 43 [2/4] (8.58ns)   --->   "%tmp_5 = fsub float %d, %e" [FS/core.cpp:29]   --->   Operation 43 'fsub' 'tmp_5' <Predicate = (tmp_1)> <Delay = 8.58> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 8.58> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 8.58>
+ST_10 : Operation 44 [1/4] (8.58ns)   --->   "%tmp_5 = fsub float %d, %e" [FS/core.cpp:29]   --->   Operation 44 'fsub' 'tmp_5' <Predicate = (tmp_1)> <Delay = 8.58> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 3> <II = 1> <Delay = 8.58> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 8.43>
+ST_11 : Operation 45 [3/3] (8.43ns)   --->   "%f = fmul float %tmp_5, 0x3F23441360000000" [FS/core.cpp:29]   --->   Operation 45 'fmul' 'f' <Predicate = (tmp_1)> <Delay = 8.43> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 2> <II = 1> <Delay = 8.43> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 8.43>
+ST_12 : Operation 46 [2/3] (8.43ns)   --->   "%f = fmul float %tmp_5, 0x3F23441360000000" [FS/core.cpp:29]   --->   Operation 46 'fmul' 'f' <Predicate = (tmp_1)> <Delay = 8.43> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 2> <II = 1> <Delay = 8.43> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 8.43>
+ST_13 : Operation 47 [1/3] (8.43ns)   --->   "%f = fmul float %tmp_5, 0x3F23441360000000" [FS/core.cpp:29]   --->   Operation 47 'fmul' 'f' <Predicate = (tmp_1)> <Delay = 8.43> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 2> <II = 1> <Delay = 8.43> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 4.17>
+ST_14 : Operation 48 [2/2] (4.17ns)   --->   "%tmp_6 = fptrunc float %f to half" [FS/core.cpp:31]   --->   Operation 48 'sptohp' 'tmp_6' <Predicate = (tmp_1)> <Delay = 4.17> <Core = "Float2Half">   --->   Core 94 'Float2Half' <Latency = 1> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'sptohp'> <InPorts = 1> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 7.57>
+ST_15 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str1)" [FS/core.cpp:22]   --->   Operation 49 'specregionbegin' 'tmp_2' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_15 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind" [FS/core.cpp:23]   --->   Operation 50 'specpipeline' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_15 : Operation 51 [1/2] (4.17ns)   --->   "%tmp_6 = fptrunc float %f to half" [FS/core.cpp:31]   --->   Operation 51 'sptohp' 'tmp_6' <Predicate = (tmp_1)> <Delay = 4.17> <Core = "Float2Half">   --->   Core 94 'Float2Half' <Latency = 1> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'sptohp'> <InPorts = 1> <OutPorts = 1>
+ST_15 : Operation 52 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.halfP(half* %c_V, half %tmp_6)" [FS/core.cpp:31]   --->   Operation 52 'write' <Predicate = (tmp_1)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 0> <FIFO>
+ST_15 : Operation 53 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str1, i32 %tmp_2)" [FS/core.cpp:32]   --->   Operation 53 'specregionend' 'empty_5' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_15 : Operation 54 [1/1] (0.00ns)   --->   "br label %1" [FS/core.cpp:32]   --->   Operation 54 'br' <Predicate = (tmp_1)> <Delay = 0.00>
+
+State 16 <SV = 2> <Delay = 0.00>
+ST_16 : Operation 55 [1/1] (0.00ns)   --->   "ret void" [FS/core.cpp:33]   --->   Operation 55 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 3.4ns
+The critical path consists of the following:
+	fifo read on port 'a_V' (FS/core.cpp:27) [21]  (3.4 ns)
+
+ <State 3>: 8.08ns
+The critical path consists of the following:
+	'sitofp' operation ('d', FS/core.cpp:27) [23]  (8.08 ns)
+
+ <State 4>: 8.08ns
+The critical path consists of the following:
+	'sitofp' operation ('d', FS/core.cpp:27) [23]  (8.08 ns)
+
+ <State 5>: 8.08ns
+The critical path consists of the following:
+	'sitofp' operation ('d', FS/core.cpp:27) [23]  (8.08 ns)
+
+ <State 6>: 8.08ns
+The critical path consists of the following:
+	'sitofp' operation ('d', FS/core.cpp:27) [23]  (8.08 ns)
+
+ <State 7>: 8.59ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_5', FS/core.cpp:29) [27]  (8.59 ns)
+
+ <State 8>: 8.59ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_5', FS/core.cpp:29) [27]  (8.59 ns)
+
+ <State 9>: 8.59ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_5', FS/core.cpp:29) [27]  (8.59 ns)
+
+ <State 10>: 8.59ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_5', FS/core.cpp:29) [27]  (8.59 ns)
+
+ <State 11>: 8.43ns
+The critical path consists of the following:
+	'fmul' operation ('f', FS/core.cpp:29) [28]  (8.43 ns)
+
+ <State 12>: 8.43ns
+The critical path consists of the following:
+	'fmul' operation ('f', FS/core.cpp:29) [28]  (8.43 ns)
+
+ <State 13>: 8.43ns
+The critical path consists of the following:
+	'fmul' operation ('f', FS/core.cpp:29) [28]  (8.43 ns)
+
+ <State 14>: 4.17ns
+The critical path consists of the following:
+	'sptohp' operation ('tmp', FS/core.cpp:31) [29]  (4.17 ns)
+
+ <State 15>: 7.57ns
+The critical path consists of the following:
+	'sptohp' operation ('tmp', FS/core.cpp:31) [29]  (4.17 ns)
+	fifo write on port 'c_V' (FS/core.cpp:31) [30]  (3.4 ns)
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

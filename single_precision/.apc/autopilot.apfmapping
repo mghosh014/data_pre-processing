@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="core.cpp" path="C:\Users\Mukesh\AppData\Roaming\Xilinx\Vivado\FS\core.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_core.cpp" path="C:\Users\Mukesh\AppData\Roaming\Xilinx\Vivado\FS\test_core.cpp"/>
+    <originFiles name="float_output.bin" path="C:\Users\Mukesh\AppData\Roaming\Xilinx\Vivado\FS\solution1\csim\build\float_output.bin"/>
+    <originFiles name="Scanaxial_13_04_2021_N_1_io.bin" path="C:\Users\Mukesh\AppData\Roaming\Xilinx\Vivado\FS\solution1\csim\build\Scanaxial_13_04_2021_N_1_io.bin"/>
+    <originFiles name="Scanaxial_13_04_2021_N_0_Pha.bin" path="C:\Users\Mukesh\AppData\Roaming\Xilinx\Vivado\FS\solution1\csim\build\Scanaxial_13_04_2021_N_0_Pha.bin"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
