@@ -25,7 +25,19 @@ In the git bash terminal use the following command to close the repository
 Open vivado HLS tool and import this project to the vivadol HLS. Afterward, run the C synthesis and wait until the simulation is finished. Later, open the raw input image as a binary file and pre-processed the output image into ImageJ software, and observe the pre-processed effect, file location: solution1/csim/build.
 
 # FPGA resource utilization
-
+If we take a look DSP, flip-flop, LUT and latency comarison bar graph then we can get an idea that is half precision is most cost effective design solution while it has a high latency comapre to single precision.
 
 ![dsp](https://user-images.githubusercontent.com/71605277/131260448-86809682-4587-4dd6-afbc-af253f8d2656.jpg)
+
+![ff](https://user-images.githubusercontent.com/71605277/131260535-54c140b0-da89-4b85-a7a9-d2d100e13685.jpg)
+
+![LUT](https://user-images.githubusercontent.com/71605277/131260684-35118264-5812-4744-b3b9-c494b6a9357f.jpg)
+
+![latency](https://user-images.githubusercontent.com/71605277/131260682-7517f221-1866-4a8d-9f24-8ca22c017ebc.jpg)
+
+The error we got which is a ngligible error and it has no impact on our output image.
+
+![mape](https://user-images.githubusercontent.com/71605277/131260685-0640b8c6-5c7c-4b12-8edb-68dad5e07b55.jpg)
+
+![mse](https://user-images.githubusercontent.com/71605277/131260686-b851638f-62ca-40ba-a8cd-2534c863551d.jpg)
 
