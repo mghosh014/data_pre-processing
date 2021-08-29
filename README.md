@@ -2,7 +2,7 @@
 
 
 # Disclaimer
-This is an academic master's course-integrated project done at Otto von Guericke University, Germany. Without permission, this code should not be used for any kind of personal or industrial work.
+This is an academic master's course-integrated project done at Otto von Guericke University, Germany. Without permission, this code should not be used for any kind of personal or industrial work. I am Mukesh Ghosh, student of Otto von Guericke University Magdeburg reserve the rights of this project work and Forschungscampus STIMULATE reserve the rights of the binary image files.
 
 # What is done by myself?
 In this file, I developed a software environment to evaluate the data pre-processing for different data type precision. For instance, floating-point precision and arbitrary fixed point precision. I used the floating-point standard defined by IEEE-754. There are four different types of floating points available, for instance, half, single, double, and quad. The vivado HLS doesn't support quad precision. That's why we are able to evaluate the first three floating-point precisions. On the other hand, arbitrary fixed precision is supported by the vivado HLS and I used only one fixed precision which is 128 bits precision.
@@ -42,4 +42,18 @@ The error we got, is a negligible error and it has no impact on our output image
 ![mape](https://user-images.githubusercontent.com/71605277/131260685-0640b8c6-5c7c-4b12-8edb-68dad5e07b55.jpg)
 
 ![mse](https://user-images.githubusercontent.com/71605277/131260686-b851638f-62ca-40ba-a8cd-2534c863551d.jpg)
+
+# Pre-processed image analysis
+The first images are image with object and image without object. We used this two image files as a input stream and we pre-processed our image to re move the noise from raw image. After doing close observation, you will understand that, pre-processing algorithm works outstanding and it removes all the noise comes during the x-ray scanning time. Therefore, we can say that, there is no big difference on the output images and no impact of high dynamic range precision. As a result, we can decide that, half precision is the best solution for CT image pre-processing because it consumes small number of harware, cost effective, need less power and give us excellent output compare to other precision type.
+![Scanaxial_13_04_2021_N_0_Pha](https://user-images.githubusercontent.com/71605277/131261011-4b4e1067-b9ec-4dbf-b16d-0cf2efbb8f60.jpg)
+
+![Scanaxial_13_04_2021_N_1_io](https://user-images.githubusercontent.com/71605277/131261012-9caa2e26-5cb6-4d7d-9212-d59575fb9082.jpg)
+
+![double_output](https://user-images.githubusercontent.com/71605277/131261006-c024ea68-039a-4c8b-a028-000cc5ca22b0.jpg)
+
+![float_output](https://user-images.githubusercontent.com/71605277/131261007-39aa8514-5d3c-4cac-9bb2-3900401c3d0c.jpg)
+
+![int_output](https://user-images.githubusercontent.com/71605277/131261008-de54129c-d0b9-43ff-99b0-f8d311401a00.jpg)
+
+![long_output](https://user-images.githubusercontent.com/71605277/131261009-692ceb2d-fc7b-4742-82ac-017c8f318b26.jpg)
 
