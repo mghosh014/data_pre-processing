@@ -14,5 +14,12 @@ You have to open this project on Vivadol HLS, where if you tun C synthesis you w
 Make sure you have installed Vivado Design Suite - HLx. I used 2019.2 editions, you can use any edition you want but not too old editions. The software download links are given below,
 
 * Vivado Design Suite - HLx 2019.2 Editions, [Software download link](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive.html)
-* ImageJ [Software download link](https://imagej.nih.gov/ij/download.html)
+* ImageJ, [Software download link](https://imagej.nih.gov/ij/download.html)
 
+# How to clone the repository
+In the git bash terminal use the following command to close the repository
+   $ git clone https://github.com/mghosh014/data_pre-processing.git
+   
+
+# How this code works
+Open vivado HLS tool and import this project to the vivadol HLS. Afterwards, run the C synthesis and wait until the simulation is finished. Later, open the raw input image in binary file and pre-processces output image into ImageJ software and observe the pre-processed effect.  
