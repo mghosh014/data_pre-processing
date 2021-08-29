@@ -23,3 +23,9 @@ In the git bash terminal use the following command to close the repository
 
 # How this code works
 Open vivado HLS tool and import this project to the vivadol HLS. Afterward, run the C synthesis and wait until the simulation is finished. Later, open the raw input image as a binary file and pre-processed the output image into ImageJ software, and observe the pre-processed effect, file location: solution1/csim/build.
+
+# FPGA resource utilization
+
+
+![dsp](https://user-images.githubusercontent.com/71605277/131260448-86809682-4587-4dd6-afbc-af253f8d2656.jpg)
+
